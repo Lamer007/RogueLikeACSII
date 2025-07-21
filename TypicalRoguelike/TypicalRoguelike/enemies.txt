@@ -1,0 +1,10 @@
+0 void 0 0 0
+1 fairie 3 1 7
+1 skeleton 4 2 10
+1 unicorn 6 0 15
+2 phoenix 7 7 20
+2 centaur 5 10 25
+2 devil 13 6 30
+3 minatour 15 15 50
+3 gryphon 20 10 50
+3 dragon 30 5 60
