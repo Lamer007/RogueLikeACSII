@@ -21,7 +21,7 @@ BattleRoom::BattleRoom()
     this->maxLevel = 0;
     vector<int> enemiesLevels;
 
-    inFile.open("enemies.txt");
+    inFile.open("./txt/enemies.txt");
 
     if (inFile.is_open())
     {
@@ -59,7 +59,7 @@ BattleRoom::BattleRoom()
 
     vector<vector<vector<string>>> pullOfEnemies(maxLevel + 1, vector<vector<string>>(0, vector<string>(0)));
 
-    inFile.open("enemies.txt");
+    inFile.open("./txt/enemies.txt");
 
     if (inFile.is_open())
     {

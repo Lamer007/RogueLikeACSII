@@ -75,7 +75,7 @@ int main()
 				bool flag = true;
 
 				ifstream inFile;
-				inFile.open("saves.txt");
+				inFile.open("./txt/saves.txt");
 
 				if (inFile.is_open())
 				{
@@ -357,7 +357,7 @@ int main()
 						if (answer == "1")
 						{
 							fstream outFile;
-							outFile.open("saves.txt", ofstream::app);
+							outFile.open("./txt/saves.txt", ofstream::app);
 
 							if(outFile.is_open())
 							{

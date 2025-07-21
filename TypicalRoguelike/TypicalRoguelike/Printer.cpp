@@ -12,7 +12,7 @@ void Printer::printASCII(string fileName)
 	{
 		string line = "";
 		ifstream inFile;
-		inFile.open(fileName);
+		inFile.open("./txt/" + fileName);
 		if (inFile.is_open())
 		{
 			while (getline(inFile, line))
@@ -43,8 +43,8 @@ void Printer::formatASCII(string fileName)
 		ofstream outFile;
 		int maxLength = 0;
 
-		inFile.open(fileName);
-		outFile.open("reformator.txt");
+		inFile.open("./txt/" + fileName);
+		outFile.open("./txt/reformator.txt");
 
 		if (inFile.is_open() && outFile.is_open())
 		{
@@ -73,8 +73,8 @@ void Printer::formatASCII(string fileName)
 
 			inFile.close();
 			outFile.close();
-			inFile.open("reformator.txt");
-			outFile.open(fileName);
+			inFile.open("./txt/reformator.txt");
+			outFile.open("./txt/" + fileName);
 
 			while (getline(inFile, line))
 			{
@@ -108,7 +108,7 @@ void Printer::printBattleRoom(vector<string>& enemiesNames)
 			string line = "";
 			int counter = 0;
 			ifstream inFile;
-			inFile.open(enemiesNames[i] + ".txt");
+			inFile.open("./txt/" + enemiesNames[i] + ".txt");
 
 			if (inFile.is_open())
 			{
@@ -137,7 +137,7 @@ void Printer::printBattleRoom(vector<string>& enemiesNames)
 			int counter = 0;
 			int lineLength = 0;
 			ifstream inFile;
-			inFile.open(enemiesNames[i] + ".txt");
+			inFile.open("./txt/" + enemiesNames[i] + ".txt");
 
 			if (inFile.is_open())
 			{
@@ -167,7 +167,7 @@ void Printer::printBattleRoom(vector<string>& enemiesNames)
 			inFile.close();
 		}
 		ofstream outFile;
-		outFile.open("battleroom.txt");
+		outFile.open("./txt/battleroom.txt");
 
 		for (int i = 0; i < battleRoom.size(); i++)
 		{
